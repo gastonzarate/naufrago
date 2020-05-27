@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Standard Caustics
+  m_Shader: {fileID: 4800000, guid: e4ff0d6b102022045b95b0cae817bc3d, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: ot_Pattern0
+        second:
+          m_Texture: {fileID: 2800000, guid: 608324813d97648558f9cea212cc0b37, type: 3}
+          m_Scale: {x: 0.1, y: 0.1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: ot_Pattern1
+        second:
+          m_Texture: {fileID: 2800000, guid: 608324813d97648558f9cea212cc0b37, type: 3}
+          m_Scale: {x: 0.15, y: 0.15}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Pattern
+        second:
+          m_Texture: {fileID: 2800000, guid: 890865ac41abb5c41a5ed14e7f7dbbdf, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Pattern0
+        second:
+          m_Texture: {fileID: 2800000, guid: 890865ac41abb5c41a5ed14e7f7dbbdf, type: 3}
+          m_Scale: {x: 0.1, y: 0.1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Pattern1
+        second:
+          m_Texture: {fileID: 2800000, guid: 890865ac41abb5c41a5ed14e7f7dbbdf, type: 3}
+          m_Scale: {x: 0.1, y: 0.1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: ot_Strength
+        second: 0.5
+      data:
+        first:
+          name: ot_StartAtDepth
+        second: 0.25
+      data:
+        first:
+          name: ot_RampDepth
+        second: 1
+      data:
+        first:
+          name: _StartAtDepth
+        second: 0.25
+      data:
+        first:
+          name: _RampDepth
+        second: 0.5
+      data:
+        first:
+          name: ot_CausticsAmbient
+        second: 0.05
+    m_Colors: {}
