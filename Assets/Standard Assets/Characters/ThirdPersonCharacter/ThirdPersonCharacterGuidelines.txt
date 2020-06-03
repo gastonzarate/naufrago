@@ -1,6 +1,8 @@
-In the ThirdPersonCharacter folder you'll find two ready-made character prefabs, which are used in the ThirdPersonCharacter sample scenes. These prefabs demonstrate how you can use the ThirdPersonCharacters scripts and animations we've included, including an AI-controlled variant which is able to walk towards a specified target, or follow a waypoint-based route.
+In the ThirdPersonCharacter folder you'll find two ready-made character prefabs, which are used in the ThirdPersonCharacter sample scenes. These prefabs demonstrate how you can use the 
+ThirdPersonCharacters scripts and animations we've included, including an AI-controlled variant which is able to walk towards a specified target, or follow a waypoint-based route.
 
-The simplest way to get started setting up your own character is to take our ThirdPersonCharacter and replace the art with your own model. To do so, make sure you've imported your own rigged model with a Humanoid avatar, then follow these steps:
+The simplest way to get started setting up your own character is to take our ThirdPersonCharacter and replace the art with your own model. To do so, make sure you've imported your own rigged model with a Humanoid avatar,
+ then follow these steps:
 
 1) Start with a suitable scene. There ought to be enough flat ground to walk around on.
 
@@ -12,7 +14,8 @@ The simplest way to get started setting up your own character is to take our Thi
 
 5) Drop the Avatar of your model (created by model importer, cf documentation) inside the Avatar slot of the Animator component on "ThirdPersonController"
 
-6) Make sure your character model's position in the inspector is set to zero on X and Z, and that it's Y position is appropriately adjusted so that your character's feet are at the same position as the ThirdPersonCharacter GameObject. (if you find it easier, you could add your character first before deleting Ethan, so that you can use Ethan's feet as a guide for where your character's feet should be)
+6) Make sure your character model's position in the inspector is set to zero on X and Z, and that it's Y position is appropriately adjusted so that your character's feet are at the same position as the ThirdPersonCharacter
+ GameObject. (if you find it easier, you could add your character first before deleting Ethan, so that you can use Ethan's feet as a guide for where your character's feet should be)
 
 7) Hit play, and try controlling your character!
 
