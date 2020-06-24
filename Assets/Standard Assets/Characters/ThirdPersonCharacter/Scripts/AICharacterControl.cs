@@ -34,6 +34,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 character.Move(Vector3.zero, false, false);
         }
 
+        void onTriggerEnter(Collider collider)
+        {
+            Debug.Log(collider.gameObject.tag);
+            Debug.Log("Hola");
+            if (collider.gameObject.tag == "Player"){
+            SetTarget(collider.gameObject.transform);
+            }
+        }
 
         public void SetTarget(Transform target)
         {
