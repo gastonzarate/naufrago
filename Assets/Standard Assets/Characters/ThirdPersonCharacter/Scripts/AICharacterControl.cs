@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public UnityEngine.AI.NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
+        public int healt = 100;
 
 
         private void Start()
@@ -34,18 +35,40 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 character.Move(Vector3.zero, false, false);
         }
 
-        void onTriggerEnter(Collider collider)
-        {
-            Debug.Log(collider.gameObject.tag);
-            Debug.Log("Hola");
-            if (collider.gameObject.tag == "Player"){
-            SetTarget(collider.gameObject.transform);
-            }
-        }
-
+        
         public void SetTarget(Transform target)
         {
             this.target = target;
+        }
+
+        void OnTriggerEnter(Collider collider)
+        {
+            if (collider.gameObject.tag == "Player")
+            {
+                SetTarget(collider.gameObject.transform);
+            }
+        }
+
+        void OnTriggerExit(Collider collider)
+        {
+            if (collider.gameObject.tag == "Player")
+            {
+                SetTarget(null);
+            }
+        }
+
+        public void damage(int damage)
+        {
+            healt -= damage;
+            if (healt < 1)
+            {
+                dead();
+            }
+        }
+
+        void dead()
+        {
+
         }
     }
 }
